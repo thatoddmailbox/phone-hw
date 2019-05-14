@@ -60,10 +60,7 @@ Connection ~ 4000 2100
 Wire Wire Line
 	4000 2100 4100 2100
 Wire Wire Line
-	4000 1800 4000 1650
-Wire Wire Line
-	4000 1650 3200 1650
-Connection ~ 3200 1650
+	4000 1800 4000 1700
 $Comp
 L Device:R_Small_US R?
 U 1 1 5C91D6DA
@@ -107,4 +104,8 @@ Wire Wire Line
 Wire Wire Line
 	2600 2500 2750 2500
 Connection ~ 2750 2500
+Text HLabel 4100 1700 2    50   Output ~ 0
+VDDIO
+Wire Wire Line
+	4000 1700 4100 1700
 $EndSCHEMATC
