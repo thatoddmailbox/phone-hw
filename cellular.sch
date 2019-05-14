@@ -127,7 +127,6 @@ RXD
 Text HLabel 3250 1950 2    50   Output ~ 0
 TXD
 NoConn ~ 3150 2050
-NoConn ~ 3150 2150
 NoConn ~ 3150 2250
 NoConn ~ 3150 2350
 NoConn ~ 3150 2450
@@ -502,4 +501,8 @@ Wire Wire Line
 	1300 3000 1350 3000
 Wire Wire Line
 	1350 3100 1300 3100
+Text HLabel 3250 2150 2    50   Output ~ 0
+RI
+Wire Wire Line
+	3150 2150 3250 2150
 $EndSCHEMATC
