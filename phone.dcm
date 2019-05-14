@@ -54,6 +54,10 @@ $CMP NSI45015WT1G
 F https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-NSI45015WT1G_C328096.pdf
 $ENDCMP
 #
+$CMP PCAL6416A
+F https://static6.arrow.com/aropdfconversion/ada1d8a6c7509095185a3a33352339d459d491a2/2688029915511161pcal6416a.pdf
+$ENDCMP
+#
 $CMP PCF8574A
 D 8 Bit Port/Expander to I2C Bus, DIP/SOIC-16
 K I2C Expander
