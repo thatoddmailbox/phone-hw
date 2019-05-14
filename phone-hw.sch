@@ -430,7 +430,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 1550 6300 1500
 Wire Wire Line
-	6300 1300 6300 1000
+	6300 1300 6300 1250
 Connection ~ 6300 1000
 $Comp
 L power:VDD #PWR04
@@ -1908,4 +1908,27 @@ Wire Wire Line
 Connection ~ 3100 6000
 Wire Wire Line
 	3100 6000 3250 6000
+Wire Wire Line
+	6300 1550 6800 1550
+Wire Wire Line
+	6800 1550 6800 1500
+Connection ~ 6300 1550
+Wire Wire Line
+	6300 1250 6800 1250
+Wire Wire Line
+	6800 1250 6800 1300
+Connection ~ 6300 1250
+Wire Wire Line
+	6300 1250 6300 1000
+$Comp
+L Device:CP_Small C?
+U 1 1 5CE0C170
+P 6800 1400
+F 0 "C?" H 6888 1446 50  0000 L CNN
+F 1 "100uF" H 6888 1355 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H_Pad1.50x2.35mm_HandSolder" H 6800 1400 50  0001 C CNN
+F 3 "~" H 6800 1400 50  0001 C CNN
+	1    6800 1400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
