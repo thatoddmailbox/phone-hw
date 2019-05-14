@@ -2000,4 +2000,78 @@ Text GLabel 5550 7000 2    39   Output ~ 0
 GSM_PWRKEY_2.8
 Wire Wire Line
 	5450 6700 5550 6700
+Text GLabel 2550 6500 2    39   Output ~ 0
+PCM_CLK
+Text GLabel 2550 5000 2    39   Output ~ 0
+PCM_SYNC
+Text GLabel 2550 6600 2    39   Output ~ 0
+PCM_IN
+Text GLabel 2550 6700 2    39   Input ~ 0
+PCM_OUT
+Wire Wire Line
+	5450 6400 6050 6400
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D9343D0
+P 6650 6500
+F 0 "SW?" H 6650 6825 50  0000 C CNN
+F 1 "VolUp" H 6650 6734 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQPE1" H 6650 6500 50  0001 C CNN
+F 3 "~" H 6650 6500 50  0001 C CNN
+	1    6650 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D950C6B
+P 7500 6550
+F 0 "#PWR?" H 7500 6300 50  0001 C CNN
+F 1 "GND" H 7505 6377 50  0000 C CNN
+F 2 "" H 7500 6550 50  0001 C CNN
+F 3 "" H 7500 6550 50  0001 C CNN
+	1    7500 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 6500 6450 6500
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D9897BE
+P 7100 6600
+F 0 "SW?" H 7100 6925 50  0000 C CNN
+F 1 "VolDown" H 7100 6834 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQPE1" H 7100 6600 50  0001 C CNN
+F 3 "~" H 7100 6600 50  0001 C CNN
+	1    7100 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 6600 6900 6600
+Wire Wire Line
+	6450 6400 7350 6400
+Wire Wire Line
+	7350 6400 7350 6500
+Wire Wire Line
+	7350 6600 7300 6600
+Wire Wire Line
+	6850 6500 7350 6500
+Connection ~ 7350 6500
+Wire Wire Line
+	7350 6500 7350 6600
+Wire Wire Line
+	7500 6550 7500 6500
+Wire Wire Line
+	7500 6500 7350 6500
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D917463
+P 6250 6400
+F 0 "SW?" H 6250 6725 50  0000 C CNN
+F 1 "Lock" H 6250 6634 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVQPE1" H 6250 6400 50  0001 C CNN
+F 3 "~" H 6250 6400 50  0001 C CNN
+	1    6250 6400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2550 4800
 $EndSCHEMATC

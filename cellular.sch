@@ -60,10 +60,6 @@ Text Notes 3200 1600 0    39   ~ 0
 Trace must be 50Ω impedance matched
 Wire Wire Line
 	3150 1600 4450 1600
-NoConn ~ 1350 2800
-NoConn ~ 1350 2900
-NoConn ~ 1350 3000
-NoConn ~ 1350 3100
 NoConn ~ 1350 3350
 NoConn ~ 1350 3250
 $Comp
@@ -490,4 +486,20 @@ Wire Wire Line
 	3950 1300 3950 1250
 Connection ~ 3950 1250
 NoConn ~ 1350 2100
+Text GLabel 1300 2800 0    39   Input ~ 0
+PCM_CLK
+Text GLabel 1300 2900 0    39   Input ~ 0
+PCM_SYNC
+Text GLabel 1300 3000 0    39   Input ~ 0
+PCM_IN
+Text GLabel 1300 3100 0    39   Output ~ 0
+PCM_OUT
+Wire Wire Line
+	1300 2800 1350 2800
+Wire Wire Line
+	1350 2900 1300 2900
+Wire Wire Line
+	1300 3000 1350 3000
+Wire Wire Line
+	1350 3100 1300 3100
 $EndSCHEMATC
