@@ -1014,10 +1014,6 @@ Text GLabel 2550 6800 2    39   Input ~ 0
 UART1_RX
 Text GLabel 2550 5100 2    39   Output ~ 0
 UART1_TX
-Text GLabel 9700 2750 2    39   Output ~ 0
-GPS_PPS
-Wire Wire Line
-	9600 2750 9700 2750
 Text GLabel 9700 900  2    39   Output ~ 0
 GSM_PWRKEY
 Text GLabel 9700 1050 2    39   Input ~ 0
@@ -1036,8 +1032,6 @@ Text GLabel 2550 6100 2    39   BiDi ~ 0
 LCD_SDA
 Text GLabel 2550 6000 2    39   Output ~ 0
 LCD_SCL
-Text GLabel 2550 5900 2    39   Output ~ 0
-LCD_~CS
 Text GLabel 2550 6200 2    39   Output ~ 0
 LCD_DC
 Text GLabel 7200 3600 2    39   Output ~ 0
@@ -1068,84 +1062,80 @@ Wire Wire Line
 $Comp
 L phone:TSWB-3N-CB SW?
 U 1 1 5CAF4DA9
-P 4600 7450
+P 3550 7350
 AR Path="/5C9D7881/5CAF4DA9" Ref="SW?"  Part="1" 
 AR Path="/5CAF4DA9" Ref="SW?"  Part="1" 
-F 0 "SW?" H 4600 8015 50  0000 C CNN
-F 1 "TSWB-3N-CB" H 4600 7924 50  0000 C CNN
-F 2 "phone:TSWB-3N-CB" H 4600 7450 50  0001 C CNN
-F 3 "" H 4600 7450 50  0001 C CNN
-	1    4600 7450
+F 0 "SW?" H 3550 7915 50  0000 C CNN
+F 1 "TSWB-3N-CB" H 3550 7824 50  0000 C CNN
+F 2 "phone:TSWB-3N-CB" H 3550 7350 50  0001 C CNN
+F 3 "" H 3550 7350 50  0001 C CNN
+	1    3550 7350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CAF4DB0
-P 4200 7550
+P 3150 7450
 AR Path="/5C9D7881/5CAF4DB0" Ref="#PWR?"  Part="1" 
 AR Path="/5CAF4DB0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4200 7300 50  0001 C CNN
-F 1 "GND" H 4205 7377 50  0000 C CNN
-F 2 "" H 4200 7550 50  0001 C CNN
-F 3 "" H 4200 7550 50  0001 C CNN
-	1    4200 7550
+F 0 "#PWR?" H 3150 7200 50  0001 C CNN
+F 1 "GND" H 3155 7277 50  0000 C CNN
+F 2 "" H 3150 7450 50  0001 C CNN
+F 3 "" H 3150 7450 50  0001 C CNN
+	1    3150 7450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 7400 4200 7400
+	3200 7300 3150 7300
 Wire Wire Line
-	4200 7400 4200 7500
+	3150 7300 3150 7400
 Wire Wire Line
-	4200 7500 4250 7500
-Connection ~ 4200 7500
+	3150 7400 3200 7400
+Connection ~ 3150 7400
 Wire Wire Line
-	4200 7500 4200 7550
+	3150 7400 3150 7450
 Wire Wire Line
-	4950 7250 5000 7250
+	3900 7150 3950 7150
 Wire Wire Line
-	5000 7350 4950 7350
+	3950 7250 3900 7250
 Wire Wire Line
-	4950 7450 5000 7450
+	3900 7350 3950 7350
 Wire Wire Line
-	5000 7550 4950 7550
+	3950 7450 3900 7450
 Wire Wire Line
-	4950 7650 5000 7650
+	3900 7550 3950 7550
 Wire Wire Line
-	5000 7750 4950 7750
-Text GLabel 5000 7150 2    39   Output ~ 0
+	3950 7650 3900 7650
+Text GLabel 3950 7050 2    39   Output ~ 0
 INPUT_S1
 Wire Wire Line
-	4950 7150 5000 7150
-Text GLabel 5000 7250 2    39   Output ~ 0
+	3900 7050 3950 7050
+Text GLabel 3950 7150 2    39   Output ~ 0
 INPUT_S2
-Text GLabel 5000 7350 2    39   Output ~ 0
+Text GLabel 3950 7250 2    39   Output ~ 0
 INPUT_S3
-Text GLabel 5000 7450 2    39   Output ~ 0
+Text GLabel 3950 7350 2    39   Output ~ 0
 INPUT_S4
-Text GLabel 5000 7550 2    39   Output ~ 0
+Text GLabel 3950 7450 2    39   Output ~ 0
 INPUT_S5
-Text GLabel 5000 7650 2    39   Output ~ 0
+Text GLabel 3950 7550 2    39   Output ~ 0
 INPUT_A
-Text GLabel 5000 7750 2    39   Output ~ 0
+Text GLabel 3950 7650 2    39   Output ~ 0
 INPUT_B
-Text GLabel 5400 5450 2    39   Input ~ 0
+Text GLabel 5550 5450 2    39   Input ~ 0
 INPUT_S1
-Text GLabel 5400 5550 2    39   Input ~ 0
+Text GLabel 5550 5550 2    39   Input ~ 0
 INPUT_S2
-Text GLabel 5400 5650 2    39   Input ~ 0
+Text GLabel 5550 5650 2    39   Input ~ 0
 INPUT_S3
-Text GLabel 5400 5750 2    39   Input ~ 0
+Text GLabel 5550 5750 2    39   Input ~ 0
 INPUT_S4
-Text GLabel 5400 5850 2    39   Input ~ 0
+Text GLabel 5550 5850 2    39   Input ~ 0
 INPUT_S5
-Text GLabel 5400 5950 2    39   Input ~ 0
+Text GLabel 5550 5950 2    39   Input ~ 0
 INPUT_A
-Text GLabel 5400 6050 2    39   Input ~ 0
+Text GLabel 5550 6050 2    39   Input ~ 0
 INPUT_B
-Text GLabel 2550 5000 2    39   Output ~ 0
-GPIO4
-Text GLabel 2550 4800 2    39   Output ~ 0
-GPIO2
 Text GLabel 4750 3800 0    39   Output ~ 0
 UART2_RX
 Text GLabel 5450 3900 0    39   Input ~ 0
@@ -1202,10 +1192,6 @@ Wire Wire Line
 	2450 4800 2550 4800
 Wire Wire Line
 	4750 3800 4800 3800
-Text GLabel 5450 3600 0    39   Input ~ 0
-GPIO2
-Text GLabel 5450 3700 0    39   Input ~ 0
-GPIO4
 Wire Wire Line
 	5450 3600 5850 3600
 Wire Wire Line
@@ -1397,57 +1383,36 @@ Wire Wire Line
 	600  4250 600  4300
 Wire Wire Line
 	1050 4250 1150 4250
-$Comp
-L phone:MCP23008_SO U?
-U 1 1 5CA4AB65
-P 4600 5800
-F 0 "U?" H 4600 6681 50  0000 C CNN
-F 1 "MCP23008_SO" H 4600 6590 50  0000 C CNN
-F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 4800 4850 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 4800 4750 50  0001 L CNN
-	1    4600 5800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5300 5450 5400 5450
+	5450 5450 5550 5450
 Wire Wire Line
-	5300 5550 5400 5550
+	5450 5550 5550 5550
 Wire Wire Line
-	5300 5650 5400 5650
+	5450 5650 5550 5650
 Wire Wire Line
-	5300 5750 5400 5750
+	5450 5750 5550 5750
 Wire Wire Line
-	5300 5850 5400 5850
+	5450 5850 5550 5850
 Wire Wire Line
-	5300 6150 5400 6150
+	5450 6150 5550 6150
 $Comp
 L power:GND #PWR?
 U 1 1 5CB128D4
-P 3850 6250
-F 0 "#PWR?" H 3850 6000 50  0001 C CNN
-F 1 "GND" H 3855 6077 50  0000 C CNN
-F 2 "" H 3850 6250 50  0001 C CNN
-F 3 "" H 3850 6250 50  0001 C CNN
-	1    3850 6250
+P 4500 6050
+F 0 "#PWR?" H 4500 5800 50  0001 C CNN
+F 1 "GND" H 4505 5877 50  0000 C CNN
+F 2 "" H 4500 6050 50  0001 C CNN
+F 3 "" H 4500 6050 50  0001 C CNN
+	1    4500 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 6000 3850 6000
+	4550 6000 4500 6000
 Wire Wire Line
-	3850 6000 3850 6100
-Wire Wire Line
-	3900 6200 3850 6200
-Connection ~ 3850 6200
-Wire Wire Line
-	3850 6200 3850 6250
-Wire Wire Line
-	3900 6100 3850 6100
-Connection ~ 3850 6100
-Wire Wire Line
-	3850 6100 3850 6200
-Text GLabel 3850 5400 0    39   Input ~ 0
+	4500 6000 4500 6050
+Text GLabel 4500 5450 0    39   Input ~ 0
 I2C_SCL
-Text GLabel 3850 5500 0    39   BiDi ~ 0
+Text GLabel 4500 5550 0    39   BiDi ~ 0
 I2C_SDA
 Text GLabel 3350 6300 2    39   Output ~ 0
 I2C_SCL
@@ -1456,89 +1421,89 @@ I2C_SDA
 $Comp
 L power:GND #PWR?
 U 1 1 5CB86217
-P 4600 6550
-F 0 "#PWR?" H 4600 6300 50  0001 C CNN
-F 1 "GND" H 4605 6377 50  0000 C CNN
-F 2 "" H 4600 6550 50  0001 C CNN
-F 3 "" H 4600 6550 50  0001 C CNN
-	1    4600 6550
+P 5000 7600
+F 0 "#PWR?" H 5000 7350 50  0001 C CNN
+F 1 "GND" H 5005 7427 50  0000 C CNN
+F 2 "" H 5000 7600 50  0001 C CNN
+F 3 "" H 5000 7600 50  0001 C CNN
+	1    5000 7600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 6550 4600 6500
+	5000 7600 5000 7350
 Wire Wire Line
-	3850 5400 3900 5400
+	4500 5450 4550 5450
 Wire Wire Line
-	3900 5500 3850 5500
-Text GLabel 3850 5700 0    39   Output ~ 0
+	4550 5550 4500 5550
+Text GLabel 4500 5700 0    39   Output ~ 0
 INPUT_INT
-Text GLabel 2550 6500 2    39   Input ~ 0
+Text GLabel 1200 4900 0    39   Input ~ 0
 INPUT_INT
 Wire Wire Line
-	3850 5700 3900 5700
+	4500 5700 4550 5700
 $Comp
 L power:VDD #PWR?
 U 1 1 5CBE9DD2
-P 4600 4700
-F 0 "#PWR?" H 4600 4550 50  0001 C CNN
-F 1 "VDD" H 4617 4873 50  0000 C CNN
-F 2 "" H 4600 4700 50  0001 C CNN
-F 3 "" H 4600 4700 50  0001 C CNN
-	1    4600 4700
+P 5000 4450
+F 0 "#PWR?" H 5000 4300 50  0001 C CNN
+F 1 "VDD" H 5017 4623 50  0000 C CNN
+F 2 "" H 5000 4450 50  0001 C CNN
+F 3 "" H 5000 4450 50  0001 C CNN
+	1    5000 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 4700 4600 4750
+	5000 4450 5000 4500
 $Comp
 L power:VDD #PWR?
 U 1 1 5CBFE713
-P 3400 5800
-F 0 "#PWR?" H 3400 5650 50  0001 C CNN
-F 1 "VDD" H 3417 5973 50  0000 C CNN
-F 2 "" H 3400 5800 50  0001 C CNN
-F 3 "" H 3400 5800 50  0001 C CNN
-	1    3400 5800
+P 4050 5800
+F 0 "#PWR?" H 4050 5650 50  0001 C CNN
+F 1 "VDD" H 4067 5973 50  0000 C CNN
+F 2 "" H 4050 5800 50  0001 C CNN
+F 3 "" H 4050 5800 50  0001 C CNN
+	1    4050 5800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 5800 3400 5850
+	4050 5800 4050 5850
 Wire Wire Line
-	3400 5850 3900 5850
+	4050 5850 4550 5850
 Wire Wire Line
-	5300 5950 5400 5950
+	5450 5950 5550 5950
 Wire Wire Line
-	5400 6050 5300 6050
+	5550 6050 5450 6050
 $Comp
 L Device:C_Small C?
 U 1 1 5CFB466A
-P 5000 4900
-F 0 "C?" H 5092 4946 50  0000 L CNN
-F 1 "0.1uF" H 5092 4855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5000 4900 50  0001 C CNN
-F 3 "~" H 5000 4900 50  0001 C CNN
-	1    5000 4900
+P 5400 4650
+F 0 "C?" H 5492 4696 50  0000 L CNN
+F 1 "0.1uF" H 5492 4605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5400 4650 50  0001 C CNN
+F 3 "~" H 5400 4650 50  0001 C CNN
+	1    5400 4650
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5CFB4E3D
-P 5000 5050
-F 0 "#PWR?" H 5000 4800 50  0001 C CNN
-F 1 "GND" H 5005 4877 50  0000 C CNN
-F 2 "" H 5000 5050 50  0001 C CNN
-F 3 "" H 5000 5050 50  0001 C CNN
-	1    5000 5050
+P 5400 4800
+F 0 "#PWR?" H 5400 4550 50  0001 C CNN
+F 1 "GND" H 5405 4627 50  0000 C CNN
+F 2 "" H 5400 4800 50  0001 C CNN
+F 3 "" H 5400 4800 50  0001 C CNN
+	1    5400 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 5050 5000 5000
+	5400 4800 5400 4750
 Wire Wire Line
-	5000 4800 5000 4750
+	5400 4550 5400 4500
 Wire Wire Line
-	5000 4750 4600 4750
-Connection ~ 4600 4750
+	5400 4500 5000 4500
+Connection ~ 5000 4500
 Wire Wire Line
-	4600 4750 4600 5100
+	5000 4500 5000 4850
 $Comp
 L Device:C_Small C?
 U 1 1 5D028A7A
@@ -1643,16 +1608,14 @@ F 3 "~" H 3800 3900 50  0001 C CNN
 	1    3800 3900
 	1    0    0    -1  
 $EndComp
-Text GLabel 2550 6600 2    39   Output ~ 0
+Text GLabel 5550 6700 2    39   Output ~ 0
 LCD_RESET
-Text GLabel 2550 6700 2    39   Output ~ 0
+Text GLabel 5550 6800 2    39   Output ~ 0
 LCD_BL
 Text GLabel 1200 4800 0    39   Input ~ 0
 LCD_TE
 Wire Wire Line
 	1200 4800 1250 4800
-Text GLabel 1200 4900 0    39   Input ~ 0
-GPS_PPS
 Wire Wire Line
 	1200 4900 1250 4900
 Wire Wire Line
@@ -1992,8 +1955,49 @@ Text GLabel 4300 2150 2    39   Output ~ 0
 BATT_~STDBY
 Wire Wire Line
 	4150 2150 4300 2150
-Text GLabel 5400 6150 2    39   Input ~ 0
+Text GLabel 5550 6150 2    39   Input ~ 0
 BATT_~CHRG
-Text GLabel 5400 6300 2    39   Input ~ 0
+Text GLabel 5550 6300 2    39   Input ~ 0
 BATT_~STDBY
+$Comp
+L phone:PCAL6416A U?
+U 1 1 5D4F7AB8
+P 5000 6200
+F 0 "U?" H 5000 4961 50  0000 C CNN
+F 1 "PCAL6416A" H 5000 4870 50  0000 C CNN
+F 2 "" H 5000 6200 50  0001 C CNN
+F 3 "https://static6.arrow.com/aropdfconversion/ada1d8a6c7509095185a3a33352339d459d491a2/2688029915511161pcal6416a.pdf" H 5000 6200 50  0001 C CNN
+	1    5000 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4950 4950 4850
+Wire Wire Line
+	4950 4850 5000 4850
+Wire Wire Line
+	5050 4950 5050 4850
+Wire Wire Line
+	5050 4850 5000 4850
+Connection ~ 5000 4850
+Wire Wire Line
+	5450 6300 5550 6300
+NoConn ~ 9600 2750
+Text GLabel 2550 5900 2    39   Output ~ 0
+LCD_~CS
+Wire Wire Line
+	5450 6800 5550 6800
+Wire Wire Line
+	5550 6900 5450 6900
+Wire Wire Line
+	5450 7000 5550 7000
+Text GLabel 5450 3600 0    39   Input ~ 0
+GPS_RESET_2.8
+Text GLabel 5550 6900 2    39   Output ~ 0
+GPS_RESET_2.8
+Text GLabel 5450 3700 0    39   Input ~ 0
+GSM_PWRKEY_2.8
+Text GLabel 5550 7000 2    39   Output ~ 0
+GSM_PWRKEY_2.8
+Wire Wire Line
+	5450 6700 5550 6700
 $EndSCHEMATC
