@@ -1032,11 +1032,11 @@ Text GLabel 7200 3700 2    39   Output ~ 0
 GSM_PWRKEY
 Text GLabel 2550 6100 2    39   BiDi ~ 0
 LCD_SDA
-Text GLabel 2550 6000 2    39   Input ~ 0
+Text GLabel 2550 6000 2    39   Output ~ 0
 LCD_SCL
-Text GLabel 2550 5900 2    39   Input ~ 0
+Text GLabel 2550 5900 2    39   Output ~ 0
 LCD_~CS
-Text GLabel 2550 6200 2    39   Input ~ 0
+Text GLabel 2550 6200 2    39   Output ~ 0
 LCD_DC
 Text GLabel 7200 3600 2    39   Output ~ 0
 GPS_RESET
