@@ -1,0 +1,81 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DMN2029USD
+D 20V DUAL N-CHANNEL ENHANCEMENT MODE MOSFET
+K Dual N-Channel MOSFET
+F https://www.diodes.com/assets/Datasheets/DMN2029USD.pdf
+$ENDCMP
+#
+$CMP DW01
+D One Cell Lithium-ion/Polymer Battery Protection IC
+K battery protection li-ion li-po
+F http://www.haoyuelectronics.com/Attachment/TP4056-modules/DW01-P_DataSheet_V10.pdf
+$ENDCMP
+#
+$CMP DW01A
+D One Cell Lithium-ion/Polymer Battery Protection IC
+K battery protection li-ion li-po
+F https://datasheet.lcsc.com/szlcsc/1901091236_PUOLOP-DW01A_C351410.pdf
+$ENDCMP
+#
+$CMP ESP32-WROVER
+D RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD
+K RF Radio BT ESP ESP32 Espressif onboard PCB antenna
+F https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
+$ENDCMP
+#
+$CMP HT42B534
+D USB to UART Bridge IC
+F https://www.holtek.com/documents/10179/116711/HT42B534-xv100.pdf
+$ENDCMP
+#
+$CMP L80-R
+D Quectel L80 GPS Module
+K quectel gps module
+F https://www.quectel.com/UploadImage/Downlad/Quectel_L80-R_Hardware_Design_V1.2.pdf
+$ENDCMP
+#
+$CMP M26
+D Quectel M26 GSM/GPRS module
+F https://fccid.io/XMR201604M26/User-Manual/Users-Manual-3010753.pdf
+$ENDCMP
+#
+$CMP MCP23008_SO
+D 8-bit I/O expander, I2C, interrupts, w pull-ups, SOIC-18
+K I2C parallel port expander
+F http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf
+$ENDCMP
+#
+$CMP MCP73833
+F http://ww1.microchip.com/downloads/en/DeviceDoc/22005b.pdf
+$ENDCMP
+#
+$CMP NSI45015WT1G
+F https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-NSI45015WT1G_C328096.pdf
+$ENDCMP
+#
+$CMP PCF8574A
+D 8 Bit Port/Expander to I2C Bus, DIP/SOIC-16
+K I2C Expander
+F http://www.nxp.com/documents/data_sheet/PCF8574_PCF8574A.pdf
+$ENDCMP
+#
+$CMP PCF8574ADGVR
+D 8 Bit Port/Expander to I2C Bus, TVSOP/TSSOP-20
+K I2C Expander
+F http://www.ti.com/lit/ds/symlink/pcf8574a.pdf
+$ENDCMP
+#
+$CMP RU8205G
+D Dual N-Channel Advanced Power MOSFET
+K Dual N-Channel MOSFET
+F https://datasheet.lcsc.com/szlcsc/Shenzhen-ruichips-Semicon-RU8205G_C238491.pdf
+$ENDCMP
+#
+$CMP XC6222B281MR-G
+D 700 mA, Low Drop-out Voltage Regulator, Fixed Output 2.8V, SOT-23-5
+K LDO Voltage Regulator 700mA
+F https://www.torexsemi.com/file/xc6222/XC6222.pdf
+$ENDCMP
+#
+#End Doc Library
