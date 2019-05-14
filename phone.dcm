@@ -72,6 +72,10 @@ K Dual N-Channel MOSFET
 F https://datasheet.lcsc.com/szlcsc/Shenzhen-ruichips-Semicon-RU8205G_C238491.pdf
 $ENDCMP
 #
+$CMP TP4056
+F https://datasheet.lcsc.com/szlcsc/Nanjing-Extension-Microelectronics-TP4056_C16581.pdf
+$ENDCMP
+#
 $CMP XC6222B281MR-G
 D 700 mA, Low Drop-out Voltage Regulator, Fixed Output 2.8V, SOT-23-5
 K LDO Voltage Regulator 700mA
