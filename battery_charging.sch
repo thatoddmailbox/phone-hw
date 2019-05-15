@@ -32,17 +32,6 @@ VBAT
 Text HLabel 2900 2350 3    50   Input ~ 0
 GND
 $Comp
-L Device:R_Small_US R20
-U 1 1 5D2A0EB0
-P 3750 1700
-F 0 "R20" H 3818 1746 50  0000 L CNN
-F 1 "10k" H 3818 1655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3750 1700 50  0001 C CNN
-F 3 "~" H 3750 1700 50  0001 C CNN
-	1    3750 1700
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C14
 U 1 1 5D2A0EC6
 P 1950 1700
@@ -97,38 +86,6 @@ Wire Wire Line
 Connection ~ 2400 2300
 Wire Wire Line
 	3350 1750 3400 1750
-Text HLabel 4000 1500 1    50   Output ~ 0
-VDDIO
-Wire Wire Line
-	3750 1600 3750 1550
-Wire Wire Line
-	3750 1550 4000 1550
-Wire Wire Line
-	4000 1550 4000 1500
-$Comp
-L Device:R_Small_US R21
-U 1 1 5D2B351B
-P 4250 1750
-F 0 "R21" H 4318 1796 50  0000 L CNN
-F 1 "10k" H 4318 1705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4250 1750 50  0001 C CNN
-F 3 "~" H 4250 1750 50  0001 C CNN
-	1    4250 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 1550 4250 1550
-Wire Wire Line
-	4250 1550 4250 1650
-Connection ~ 4000 1550
-Wire Wire Line
-	3350 1950 4250 1950
-Wire Wire Line
-	4250 1950 4250 1850
-Wire Wire Line
-	3350 1850 3750 1850
-Wire Wire Line
-	3750 1800 3750 1850
 Wire Wire Line
 	2450 1850 2300 1850
 Wire Wire Line
@@ -138,14 +95,8 @@ Wire Wire Line
 	2300 2300 1950 2300
 Text HLabel 3850 1850 2    50   Output ~ 0
 ~STDBY
-Wire Wire Line
-	3750 1850 3850 1850
-Connection ~ 3750 1850
 Text HLabel 4300 1950 2    50   Output ~ 0
 ~CHRG
-Wire Wire Line
-	4250 1950 4300 1950
-Connection ~ 4250 1950
 $Comp
 L Device:R_Small_US R18
 U 1 1 5D2C86EE
@@ -176,4 +127,13 @@ $EndComp
 Wire Wire Line
 	2900 1500 2900 1300
 Connection ~ 2900 1500
+Wire Wire Line
+	4000 1550 4000 1500
+Text HLabel 4000 1500 1    50   Output ~ 0
+VDDIO
+Wire Wire Line
+	3350 1950 4300 1950
+Wire Wire Line
+	3350 1850 3850 1850
+NoConn ~ 4000 1550
 $EndSCHEMATC
