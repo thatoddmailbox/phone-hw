@@ -193,21 +193,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 1050 2900 900 
 Wire Wire Line
-	2300 900  2300 950 
-$Comp
-L Device:Battery_Cell BT1
-U 1 1 5C9332A7
-P 2300 1150
-F 0 "BT1" H 2418 1246 50  0000 L CNN
-F 1 "Battery_Cell" H 2418 1155 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 2300 1210 50  0001 C CNN
-F 3 "~" V 2300 1210 50  0001 C CNN
-	1    2300 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 1250 2300 1300
-Wire Wire Line
 	2900 1300 2900 1150
 Wire Wire Line
 	2900 1150 3000 1150
@@ -1612,26 +1597,6 @@ Wire Wire Line
 	1200 4800 1250 4800
 Wire Wire Line
 	1200 4900 1250 4900
-Wire Wire Line
-	2300 900  2900 900 
-Wire Wire Line
-	2300 1300 2900 1300
-$Comp
-L power:PWR_FLAG #FLG01
-U 1 1 5D6F8FE7
-P 1950 1250
-F 0 "#FLG01" H 1950 1325 50  0001 C CNN
-F 1 "PWR_FLAG" H 1950 1423 50  0000 C CNN
-F 2 "" H 1950 1250 50  0001 C CNN
-F 3 "~" H 1950 1250 50  0001 C CNN
-	1    1950 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 1300 1950 1300
-Wire Wire Line
-	1950 1300 1950 1250
-Connection ~ 2300 1300
 $Comp
 L power:PWR_FLAG #FLG03
 U 1 1 5D70F89F
@@ -2109,4 +2074,46 @@ Wire Wire Line
 	4800 3500 4800 3450
 Text GLabel 2550 4800 2    39   Input ~ 0
 GSM_RI_2.8
+$Comp
+L Connector:Conn_01x01_Female J5
+U 1 1 5DE9CCC6
+P 2100 900
+F 0 "J5" H 1992 675 50  0000 C CNN
+F 1 "BATT+" H 1992 766 50  0000 C CNN
+F 2 "" H 2100 900 50  0001 C CNN
+F 3 "~" H 2100 900 50  0001 C CNN
+	1    2100 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Female J6
+U 1 1 5DF18DEB
+P 2100 1300
+F 0 "J6" H 1992 1075 50  0000 C CNN
+F 1 "BATT-" H 1992 1166 50  0000 C CNN
+F 2 "" H 2100 1300 50  0001 C CNN
+F 3 "~" H 2100 1300 50  0001 C CNN
+	1    2100 1300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 1300 2700 1300
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5DF195A7
+P 2700 1200
+F 0 "#FLG0102" H 2700 1275 50  0001 C CNN
+F 1 "PWR_FLAG" H 2700 1373 50  0000 C CNN
+F 2 "" H 2700 1200 50  0001 C CNN
+F 3 "~" H 2700 1200 50  0001 C CNN
+	1    2700 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1200 2700 1300
+Connection ~ 2700 1300
+Wire Wire Line
+	2700 1300 2900 1300
+Wire Wire Line
+	2300 900  2900 900 
 $EndSCHEMATC
