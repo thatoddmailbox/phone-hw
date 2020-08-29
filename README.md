@@ -1,5 +1,5 @@
 # phone-hw
-The hardware (schematic, PCB, Gerbers) portion of a phone I built. You might also want to see [the firmware](https://github.com/thatoddmailbox/phone-fw).
+The hardware (schematic, PCB, Gerbers) portion of a [phone I built](https://github.com/thatoddmailbox/phone). You might also want to see [the firmware](https://github.com/thatoddmailbox/phone-fw).
 
 Uses an Espressif ESP32-WROVER module as main CPU + WiFi/Bluetooth, a Quectel M26 modem for GSM and GPRS data, and a Quectel L80 module for GPS.
 
